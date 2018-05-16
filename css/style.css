@@ -1,12 +1,24 @@
 .top{
-		margin: 10%;
+		margin-top:15%;
+
+}
+.linkHome{
+	color: white;
 }
 body{
-	font-size: 25px;
+	font-size: 22px;
+
 	font-family: "tw cen mt";
 }
-
+input,button{
+	background-color: #00aced;
+}
 p{
-	font-size: 25px;
+	text-align: justify;
+	font-size: 22px;
 	font-family: "tw cen mt";
+}
+a{
+	text-decoration: none;
+	color: black;
 }

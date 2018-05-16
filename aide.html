@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aide</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" type="text/css" href="css/material.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="utf-8">
+</head>
+<body>
+	<!-- Uses a header that scrolls with the text, rather than staying
+  locked at the top -->
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header mdl-layout__header--scroll" style="background: #0084b4;">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title"><a href="index.html" class="linkHome">Densipara</a></span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="mdl-navigation">
+		        <!-- Right aligned menu below button -->
+		<button id="demo-menu-lower-right"
+		        class="mdl-button mdl-js-button mdl-button--icon">
+		  <i class="material-icons">more_vert</i>
+		</button>
+
+		<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+		    for="demo-menu-lower-right">
+		  <li class="mdl-menu__item"><a href="about.html">A propos</a></li>
+		  <li class="mdl-menu__item"><a href="aide.html">Aide</a></li>
+		</ul>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Menu</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="index.html"><i class="material-icons">home</i> Accueil</a>
+        <a class="mdl-navigation__link" href="aide.html"><i class="material-icons">help</i> Aide</a>
+        <a class="mdl-navigation__link" href="about.html"> <i class="material-icons">feedback</i> A propos</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content"><!-- Your content goes here --></div>
+  </main>
+</div>
+
+
+ <main class="mdl-layout__content">
+
+	<div  class="mdl-grid container top">
+
+ <!-- content -->
+    <section class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
+      <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
+        <article>
+            <p>
+                DensiPara <span id="about_description">est une application de calcul de la densité parasitaire.</span> 
+            </p>
+
+            <p>
+                <span id ="help_description">La densité parasitaire est une mesure de la quantité de parasites dans le sang. C’est un paramètre important pour déterminer la force de l’infection plasmodiale. Elle est utilisée par les médecins pour affiner leur diagnostic et adapter leur traitement. Cette application est à destination des techniciens de laboratoire qui diagnostiquent le paludisme par microscopie (goutte épaisse et frottis sanguin).</span>
+            </p>
+
+            <p>
+                <span id="help_user">L’utilisateur fournit comme paramètres d'entrée le nombre de parasites et le nombre de globules blancs comptés par microscopie. Une valeur par défaut est utilisée pour le nombre de globules blancs par µL de sang. Cette valeur peut être modifiée. Le bouton <em>Calculer</em> permet d'effectuer le calcul. Le bouton <em>Réinitialiser</em> efface tous les champs.</span>
+            </p>
+        </article>
+      </div>
+        
+    </section>
+
+  </div>
+</main>
+<script type="text/javascript" src="js/material.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>

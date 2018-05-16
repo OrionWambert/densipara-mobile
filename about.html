@@ -5,16 +5,17 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" type="text/css" href="css/material.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta charset="utf-8">
 </head>
 <body>
 	<!-- Uses a header that scrolls with the text, rather than staying
   locked at the top -->
-<div class="mdl-layout mdl-js-layout">
-  <header class="mdl-layout__header mdl-layout__header--scroll">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header mdl-layout__header--scroll" style="background: #0084b4;">
     <div class="mdl-layout__header-row">
       <!-- Title -->
-      <span class="mdl-layout-title">Densipara</span>
+      <span class="mdl-layout-title"><a href="index.html" class="linkHome">Densipara</a></span>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation -->
@@ -27,18 +28,18 @@
 
 		<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
 		    for="demo-menu-lower-right">
-		  <li class="mdl-menu__item">A propos</li>
-		  <li class="mdl-menu__item">Aide</li>
+		  <li class="mdl-menu__item"><a href="about.html">A propos</a></li>
+		  <li class="mdl-menu__item"><a href="aide.html">Aide</a></li>
 		</ul>
       </nav>
     </div>
   </header>
-  <div class="mdl-layout__drawer" style="color: white;background: pink;">
+  <div class="mdl-layout__drawer" >
     <span class="mdl-layout-title">Menu</span>
     <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="index.html">Accueil</a>
-        <a class="mdl-navigation__link" href="aide.html">Aide</a>
-        <a class="mdl-navigation__link" href="about.html">A propos</a>
+      <a class="mdl-navigation__link" href="index.html"><i class="material-icons">home</i> Accueil</a>
+        <a class="mdl-navigation__link" href="aide.html"><i class="material-icons">help</i> Aide</a>
+        <a class="mdl-navigation__link" href="about.html"><i class="material-icons">feedback</i> A propos</a>
     </nav>
   </div>
   <main class="mdl-layout__content">
@@ -50,7 +51,9 @@
  <main class="mdl-layout__content">
 
 	<div  class="mdl-grid container top">
-        <article>
+
+    <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
+      <article>
             <p>
                 <b>DensiPara</b> (version 2.0) 
                 <span id="about_description">est une application de calcul de la densité parasitaire pour le diagnostic du paludisme.</span>
@@ -58,7 +61,7 @@
             <p>
                 <span id="about_fongwama">Développement : FCRM et Fongwama, la plateforme congolaise de développement libre.</span>
             </p><br>
-            <p class="img">
+            <p class="img" class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
                 <a href="http://www.fongwama.com" target="_blank">
                     <img src="img/logo_fongwama.jpg" alt="logo Fongwama" />
                 </a>
@@ -73,6 +76,7 @@
                    <a href="http://www.flyecair.com" target="_blank">
                        <img src="img/logo_fondation_ecair.jpg" alt="logo fondation ECAir" />
                    </a>
+
                    <a href="http://skepsos.fr" target="_blank">
                        <img src="img/logo_skepsos.jpg" alt="logo Skepsos" />
                    </a>
@@ -102,6 +106,8 @@
             </p>
         </article>
 
+    </div>
+        
  </div>
  </main>
  <script type="text/javascript" src="js/material.min.js"></script>
