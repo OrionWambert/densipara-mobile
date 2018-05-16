@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Accueil</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" type="text/css" href="css/material.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<!-- Uses a header that scrolls with the text, rather than staying
+  locked at the top -->
+<div class="mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--scroll">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Densipara</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="mdl-navigation">
+		        <!-- Right aligned menu below button -->
+		<button id="demo-menu-lower-right"
+		        class="mdl-button mdl-js-button mdl-button--icon">
+		  <i class="material-icons">more_vert</i>
+		</button>
+
+		<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+		    for="demo-menu-lower-right">
+		  <li class="mdl-menu__item">A propos</li>
+		  <li class="mdl-menu__item">Aide</li>
+		</ul>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer" style="color: white;background: pink;">
+    <span class="mdl-layout-title">Menu</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="index.html">Accueil</a>
+        <a class="mdl-navigation__link" href="aide.html">Aide</a>
+        <a class="mdl-navigation__link" href="about.html">A propos</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content"><!-- Your content goes here --></div>
+  </main>
+</div>
+
+
+ <main class="mdl-layout__content">
+
+	<div  class="mdl-grid container top">
+        <article>
+            <p>
+                <b>DensiPara</b> (version 2.0) 
+                <span id="about_description">est une application de calcul de la densité parasitaire pour le diagnostic du paludisme.</span>
+            </p><br>
+            <p>
+                <span id="about_fongwama">Développement : FCRM et Fongwama, la plateforme congolaise de développement libre.</span>
+            </p><br>
+            <p class="img">
+                <a href="http://www.fongwama.com" target="_blank">
+                    <img src="img/logo_fongwama.jpg" alt="logo Fongwama" />
+                </a>
+            </p><br>
+            <p>
+                Prince Youlou,Orion WAMBERT ,Delphin Bondongo, Aristide Ndielé, Trésor Ngassaki, Borel Badila, Steve Ndende, Pierre Poulain.
+            </p>
+            <br>
+            <p>
+                <span id="about_sponsors">Ce projet est soutenu par nos partenaires :</span>
+                <div class="img">
+                   <a href="http://www.flyecair.com" target="_blank">
+                       <img src="img/logo_fondation_ecair.jpg" alt="logo fondation ECAir" />
+                   </a>
+                   <a href="http://skepsos.fr" target="_blank">
+                       <img src="img/logo_skepsos.jpg" alt="logo Skepsos" />
+                   </a>
+                   <br />
+                    <a href="http://www.fcrm-congo.com" target="_blank">
+                        <img src="img/logo_fcrm.jpg" alt="logo FCRM" />
+                    </a>                   
+                   <a href="http://www.azur-congo.com" target="_blank">
+                       <img src="img/logo_azur.jpg" alt="logo Azur" />
+                    </a><br />
+                   <a href="#" target="_blank">
+                       <img src="img/logo_congo_telecom.jpg" alt="logo Congo Telecom" />
+                   </a>
+                   <a href="#" target="_blank">
+                       <img src="img/logo_pnlp.jpg" alt="logo PNLP" />
+                   </a>                   
+                </div>
+            </p>
+            <br><br>
+            <p>
+                <span id="about_license">Cette application est un logiciel libre diffusé sous la licence</span>: <br />
+                The GNU General Public License (GPL)<br />
+                Version 2, June 1991 <br />
+                Copyright (C) 1989, 1991 Free Software Foundation, Inc.<br />
+                59 Temple Place, Suite 330, Boston, MA 02111-1307 USA<br />
+                Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
+            </p>
+        </article>
+
+ </div>
+ </main>
+ <script type="text/javascript" src="js/material.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+ </body>       

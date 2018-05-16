@@ -4,6 +4,8 @@
 	<title>Accueil</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" type="text/css" href="css/material.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
 </head>
 <body>
 	<!-- Uses a header that scrolls with the text, rather than staying
@@ -25,26 +27,114 @@
 
 		<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
 		    for="demo-menu-lower-right">
-		  <li class="mdl-menu__item">Some Action</li>
-		  <li class="mdl-menu__item">Another Action</li>
-		  <li disabled class="mdl-menu__item">Disabled Action</li>
-		  <li class="mdl-menu__item">Yet Another Action</li>
+		  <li class="mdl-menu__item">A propos</li>
+		  <li class="mdl-menu__item">Aide</li>
 		</ul>
       </nav>
     </div>
   </header>
-  <div class="mdl-layout__drawer">
+  <div class="mdl-layout__drawer" style="color: white;background: pink;">
     <span class="mdl-layout-title">Menu</span>
     <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">Accueil</a>
-        <a class="mdl-navigation__link" href="">Aide</a>
-        <a class="mdl-navigation__link" href="">A propos</a>
+      <a class="mdl-navigation__link" href="index.html">Accueil</a>
+        <a class="mdl-navigation__link" href="aide.html">Aide</a>
+        <a class="mdl-navigation__link" href="about.html">A propos</a>
     </nav>
   </div>
   <main class="mdl-layout__content">
     <div class="page-content"><!-- Your content goes here --></div>
   </main>
 </div>
+
+
+ <main class="mdl-layout__content">
+
+	  	<div  class="mdl-grid container top">
+	  		<form method="post" action="#">
+                <fieldset id="field_thick_smear">
+                <legend id="legend_thick_smear">Analyse goutte épaisse</legend>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <label class="mdl-textfield__label" id="label_nb_parasite" for="input_nb_parasite">Nombre de parasites</label>
+                    <input class="mdl-textfield__input" id="input_nb_parasite" type="text" />
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <label class="mdl-textfield__label" id="label_nb_wbc" for="input_nb_wbc">Nombre de globules blancs</label>
+                    <input class="mdl-textfield__input" id="input_nb_wbc" type="text" />
+                   
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <label class="mdl-textfield__label" id="label_nb_wbc_blood" for="input_nb_wbc_blood">Nombre de globules blancs / µL de sang</label>
+                    <input class="mdl-textfield__input" id="input_nb_wbc_blood" type="text" />
+                </div>
+                <div class="actions">
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="button_compute" class="btn" type="button">Calculer</button>
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="button_reset" class="btn" type="button">Réinitialiser</button>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <label class="mdl-textfield__label" id="label_parasitemia" class="parasitemia">Densité parasitaire</label>
+                    <input class="mdl-textfield__input" id="input_parasitemia" class="parasitemia" type="text" readonly />
+                    
+                </div>
+                <label id="label_parasitemia_unit" class="parasitemia">parasites / µL de sang</label>
+                    <span id="info_hyperparasitemia" class="error">Hyperparasitémie détectée !</span>
+                </fieldset>
+                <fieldset class="field_thin_smear">
+                    <legend id="legend_thin_smear">Analyse frottis sanguin</legend><br>
+                        <div>
+                            <label id="label_species">Espèces identifiées</label><br><br>
+                            <div class="name_species"> 
+                                <input  type="checkbox" class="species" id="input_p_falciparum" value="Plasmodium falciparum" />
+                                <label class="species" for="input_p_falciparum">Plasmodium falciparum</label>
+                            </div>
+                            <div class="name_species">
+                                <input type="checkbox" class="species" id="input_p_vivax" value="Plasmodium vivax" />
+                                <label class="species" for="input_p_vivax">Plasmodium vivax</label>
+                            </div>
+                            <div class="name_species">
+                                <input type="checkbox" class="species" id="input_p_ovale" value="Plasmodium ovale" />
+                                <label class="species" for="input_p_ovale">Plasmodium ovale</label>
+                            </div>
+                            <div class="name_species">
+                                <input type="checkbox" class="species" id="input_p_malariae" value="Plasmodium malariae" />
+                                <label class="species" for="input_p_malariae">Plasmodium malariae</label>
+                            </div>
+                            <div class="name_species">
+                                <input type="checkbox" class="species" id="input_p_knowlesi" value="Plasmodium knowlesi" />
+                                <label class="species" for="input_p_knowlesi">Plasmodium knowlesi</label>
+                            </div>
+                        </div>
+                        <br>
+                </fieldset>
+                <fieldset class="field_quality_control">
+                    <legend id="label_quality_control">Contrôle qualité</legend>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <label class="mdl-textfield__label" id="label_ref_id" for="input_ref_id">Numéro de référence</label>
+                        <input class="mdl-textfield__input" id="input_ref_id" type="text" />
+                    </div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <label class="mdl-textfield__label" id="label_tech_id" for="input_tech_id">Nom du technicien</label>
+                        <input class="mdl-textfield__input" id="input_tech_id" type="text" />
+                    </div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <label class="mdl-textfield__label" id="label_date_time">Date et heure</label>
+                        <input class="mdl-textfield__input" id="input_date_time" type="text" readonly />
+                    </div>
+                    <div class="actions"> 
+                        <a href="#" class="btn mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="button_export">
+                            Exporter les données
+                        </a>
+                    </div>   
+                </fieldset>
+
+            </form>
+
+  </div>
+</main>
+
+	  	
+
 <script type="text/javascript" src="js/material.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
