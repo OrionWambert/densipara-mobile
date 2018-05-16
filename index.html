@@ -2,9 +2,49 @@
 <html>
 <head>
 	<title>Accueil</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" type="text/css" href="css/material.min.css">
 </head>
 <body>
+	<!-- Uses a header that scrolls with the text, rather than staying
+  locked at the top -->
+<div class="mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--scroll">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Densipara</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="mdl-navigation">
+		        <!-- Right aligned menu below button -->
+		<button id="demo-menu-lower-right"
+		        class="mdl-button mdl-js-button mdl-button--icon">
+		  <i class="material-icons">more_vert</i>
+		</button>
+
+		<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+		    for="demo-menu-lower-right">
+		  <li class="mdl-menu__item">Some Action</li>
+		  <li class="mdl-menu__item">Another Action</li>
+		  <li disabled class="mdl-menu__item">Disabled Action</li>
+		  <li class="mdl-menu__item">Yet Another Action</li>
+		</ul>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Menu</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Accueil</a>
+        <a class="mdl-navigation__link" href="">Aide</a>
+        <a class="mdl-navigation__link" href="">A propos</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content"><!-- Your content goes here --></div>
+  </main>
+</div>
 <script type="text/javascript" src="js/material.min.js"></script>
 </body>
 </html>
