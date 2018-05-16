@@ -6,8 +6,10 @@
 	color: white;
 }
 body{
+	background-image: url('../img/back.jpg');background-size: 100%  cover;
+	color: black;
+	background-repeat: no-repeat;
 	font-size: 22px;
-
 	font-family: "tw cen mt";
 }
 input,button{
@@ -21,4 +23,11 @@ p{
 a{
 	text-decoration: none;
 	color: black;
+}
+.bgAbout{
+
+}
+
+.bgAide{
+	color: white;
 }
